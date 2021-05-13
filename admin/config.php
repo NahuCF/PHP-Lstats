@@ -1,8 +1,8 @@
 <?php
 
 $db_config = array(
-    "db_name" => "",
-    "user" => "",
+    "database" => "lol_api",
+    "user" => "root",
     "password" => ""
 );
 

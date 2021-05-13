@@ -13,13 +13,7 @@
 </head>
 <body>
     <header class="header-main">
-        <p>Home</p>
+        <a href="/"><p>Home</p></a>
     </header>
-    <main class="main-index">
-        <form class="form-index" action="sum" method="GET">
-            <input name="name" type="text" placeholder="Summoner">
-            <i class="fas fa-search"></i>
-        </form>
-    </main>
 </body>
 </html>
