@@ -9,14 +9,12 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
 
-    <title>Index</title>
+    <title>LStats - Home</title>
 </head>
 <body>
-    <header class="header-main">
-        <p>Home</p>
-    </header>
+    <?php require "view/header.php" ?>
     <main class="main-index">
-        <form class="form-index" action="sum" method="GET">
+        <form class="form-summoner" action="sum" method="GET">
             <input name="name" type="text" placeholder="Summoner">
             <i class="fas fa-search"></i>
         </form>

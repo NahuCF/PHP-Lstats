@@ -10,6 +10,10 @@ p {
     color: rgb(121, 134, 163);
 }
 
+a {
+    text-decoration: none;
+}
+
 input {
     outline: none;
 }
@@ -38,11 +42,11 @@ input {
     z-index: -1;
 }
 
-.form-index {
+.form-summoner {
     position: relative;
 }
 
-.form-index input {
+.form-summoner input {
     padding: .3rem 2rem .3rem 1rem;
 
     width: 30rem;
@@ -56,14 +60,119 @@ input {
     border-radius: .3rem;
 }
 
-.form-index input:hover {
+.form-summoner input:hover {
     background-color: rgb(40, 55, 87);
 }
 
-.form-index i {
+.form-summoner i {
     position: absolute;
     top: 1rem;
     right: 1rem;
 
     color: rgb(211, 211, 211);
+    pointer-events: none;
 }
+
+/* SUM.VIEW */
+
+.wrap {
+    min-height: 100vh;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #0E1015;
+}
+
+.top {
+    padding: .8rem;
+
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    padding-bottom: 4rem;
+}
+
+.form-summoner--left-lupa input {
+    padding: .3rem 1rem .3rem 3rem;
+    
+    background-color: #181A20;
+    border-color: #181A20;
+    color:rgb(119 137 152);
+}
+
+.form-summoner--left-lupa input:hover {
+    background-color: #272A30;
+}
+
+.form-summoner--left-lupa i {
+    left: 1rem;
+    right: unset;
+
+    pointer-events: none;
+}
+
+.matchs-container {
+    width: 35rem;
+
+    border-radius: .4rem;
+}
+
+.match {
+    background-color: #181A20;
+
+    border-bottom: .1rem solid black;
+}
+
+.match__content {
+    padding: 1.2em;
+}
+
+.match__left {
+    display: flex;
+}
+
+.match__champion-img {
+    height: 3rem;
+}
+
+.match__general-info > h3 {
+    margin: 0 2rem 1rem 0;
+    
+    color: #fb5a5a;
+}
+
+.match__kda {
+    margin-bottom: .3rem;
+
+    color: rgb(151, 141, 135);
+    font-weight: 700;
+    font-size: .95rem;
+}
+
+.match__data--little {
+    font-size: .8rem;
+}
+
+.match__per-minute {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.match__per-minute__top {
+    margin-bottom: .5rem;
+}
+
+.match__per-minute > div p:first-child {
+    margin-bottom: .3rem;
+    
+    font-weight: 700;
+    font-size: .95rem;
+    
+    color: #e6e6e6;
+}
+
